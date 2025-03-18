@@ -1,0 +1,21 @@
+When to Use Singleton Pattern?
+Use the Singleton pattern when:
+
+Only One Instance is Needed – When your application requires exactly one shared instance of a class (e.g., configuration manager, logging, database connection).
+Global Access – When multiple parts of the application need to access the same instance without creating multiple objects.
+Resource Management – When dealing with expensive objects like database connections, caches, or thread pools, where creating multiple instances is unnecessary or costly.
+
+
+Why Use Singleton Pattern?
+Ensures a single point of control over shared resources.
+Improves performance by reducing memory usage and object creation overhead.
+Helps in synchronizing access to shared resources in multithreaded applications.
+
+
+
+Real-World Use Cases
+🔹 Database Connection Pool – Ensures a single instance of a database connection manager to optimize resource usage.
+🔹 Logging System – Maintains a single logger instance to manage application-wide logging efficiently.
+🔹 Configuration Manager – Loads and provides access to application-wide settings in a single instance.
+🔹 Thread Pool Manager – Prevents the overhead of creating multiple thread pool instances.
+

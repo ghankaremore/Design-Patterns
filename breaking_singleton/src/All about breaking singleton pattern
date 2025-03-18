@@ -1,0 +1,14 @@
+Ways Singleton Can Be Broken
+Despite ensuring a single instance, the Singleton pattern can be broken in several ways:
+
+Reflection – Using reflection, we can access the private constructor and create multiple instances.
+Cloning – If the Singleton class implements Cloneable, calling clone() can create another instance.
+Serialization & Deserialization – When a Singleton is serialized and then deserialized, a new instance can be created.
+Multithreading Issues – Improperly implemented Singleton (without synchronization or volatile) can result in multiple instances in a multithreaded environment.
+
+
+Real-World Implications of Breaking Singleton
+🚨 Security Risks – If an attacker gains access to the Singleton instance via reflection, they can modify its behavior.
+🚨 Memory Issues – If multiple instances are created, memory consumption can increase unexpectedly.
+🚨 Inconsistent State – When a Singleton manages shared resources (e.g., a cache or database connection), breaking it can lead to inconsistent data.
+
