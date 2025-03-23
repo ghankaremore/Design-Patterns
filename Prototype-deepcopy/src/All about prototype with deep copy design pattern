@@ -1,0 +1,27 @@
+✅ When to Use Prototype Pattern with Deep Copy?
+Use the Prototype pattern with deep copy when:
+
+✅ Objects Have Nested or Reference Fields – When the object you're cloning contains other objects or collections (e.g., lists, maps, custom objects).
+
+✅ Modifying a Clone Should Not Affect the Original – When changes to the cloned object's internal state should not reflect in the original.
+
+✅ Complex Object Structures – When the object graph is too complex to construct manually each time.
+
+⭐ Why Use Deep Copy in Prototype Pattern?
+✔ Avoids Shared References – Ensures that mutable nested fields are fully cloned instead of pointing to the same memory reference.
+
+✔ Provides True Independence – Each copy is a completely separate instance with its own nested structure.
+
+✔ Safer in Multi-Threaded Environments – Reduces the risk of shared mutable state across threads.
+
+✔ Useful for Undo/Redo or Simulation Systems – Preserves object history or alternate states without interference.
+
+🌍 Real-World Use Cases
+🔹 Game Development – Cloning characters, levels, or game state objects with deep internal references (inventory, abilities, etc.).
+
+🔹 Graphics Editors – Duplicating objects with deeply nested shapes, colors, and layers.
+
+🔹 Document/Template Systems – Creating deep copies of documents with embedded styles, tables, or configuration blocks.
+
+🔹 Workflow Engines – Cloning job/process configurations that contain nested steps or rules.
+

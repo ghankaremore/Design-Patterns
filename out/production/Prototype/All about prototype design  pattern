@@ -1,0 +1,37 @@
+✅ When to Use Prototype Pattern?
+Use the Prototype pattern when:
+
+✅ Object Creation is Costly – When creating an object from scratch (e.g., database read, network call, or complex computation) is resource-intensive.
+
+✅ You Need Many Similar Objects – When you need to create multiple instances with similar configurations or partially modified copies of an existing object.
+
+✅ Avoiding Subclassing – When instantiating a class directly or via subclassing is complex or not flexible enough.
+
+✅ You Want to Keep Object Creation Independent of the Class Hierarchy – When your code shouldn't be tightly coupled with specific class constructors.
+
+⭐ Why Use Prototype Pattern?
+✔ Improves Performance – Speeds up object creation by cloning instead of building from scratch.
+
+✔ Reduces Complexity – Simplifies creation of similar or pre-configured objects.
+
+✔ Enables Runtime Object Configuration – Allows new objects to be created at runtime by copying existing instances.
+
+✔ Simplifies Object Creation Logic – Eliminates the need for repetitive instantiation logic across the application.
+
+🌍 Real-World Use Cases
+🔹 Graphic Editors – Duplicate shapes, images, or components quickly by cloning existing ones with minor changes.
+
+🔹 Game Development – Clone characters, enemies, or obstacles with shared base properties but slight variations.
+
+🔹 Document Templates – Create new documents from predefined templates by cloning and modifying them.
+
+🔹 Data Prototypes in Machine Learning – Clone and tweak data points or models for experimentation without retraining or reloading.
+
+🚀 The Prototype pattern is powerful when object creation is heavy or repetitive, and you want to make performance and flexibility a priority.
+
+
+
+
+
+
+
